@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block header %}<h1 align="center">Интернет магазин одежы по доступным ценам</h1>{% endblock %}
+
+{% block content %}
+<p><strong><h2>В нашем магазине можно приобрести следующие товары:</h2></strong></p>
+
+  <table style="width:80%", , align="center">
+
+  <tr>
+    <td align="center", width="25%"><h2>Одежда</h2></td>
+    <td align="center", width="25%"><h2>Обувь</h2></td>
+    <td align="center", width="25%"><h2>Куртки</h2></td>
+    <td align="center", width="25%"><h2>Шубы</h2></td>
+  </tr>
+  <tr>
+      <td align="center", width="25%"><h2>Ветровки</h2></td>
+      <td align="center", width="25%"><h2>Спортивная одежда</h2></td>
+      <td align="center", width="25%"><h2>Спецовки</h2></td>
+      <td align="center", width="25%"><h2>Аксесуары</h2></td>
+  </tr>
+  </table>
+{% endblock %}
+
+
+{% block footer %}
+<footer>
+    <h3>Контактная информация</h3>
+    <address>Адрес: 123456, г. Москва, ул. Пушкина, д. 10</address>
+    <p>Телефон: +7 (495) 123-45-67<br>Электронная почта: info@example.com</p>
+</footer>
+{% endblock %}
