@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello</title>
+</head>
+<body>
+<div align="center">
+    <h1>Здравствуйте, {{ name }}!</h1>
+    <br>
+    <br>
+    <button onclick="logout()">Выйти</button>
+    <script>
+        function logout() {
+            document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.replace("/");
+        }
+    </script>
+</div>
+
+</body>
+</html>
