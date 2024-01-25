@@ -32,7 +32,7 @@ def checkUrls():
     if not os.path.exists(folder):
         os.mkdir(folder)
     for url in urls:
-        filename = os.path.basename(urlparse(url).path)
+        filename = os.path.basename(url)
         filepath = os.path.join(folder, filename)
         download_image(url, filepath)
 
